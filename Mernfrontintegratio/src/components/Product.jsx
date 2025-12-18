@@ -140,12 +140,13 @@ export default function Product() {
 
               {/* Action Buttons */}
               <div className="space-y-4">
-                <Link 
-                  to={`/buynow/${product._id}`}
-                  className="block w-full bg-gradient-to-r from-black to-black hover:from-black hover:to-black text-black text-lg font-semibold py-4 px-6 rounded-xl text-center transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
-                >
-                  Buy Now
-                </Link>
+            <Link 
+            to={`/buynow/${product._id}`}
+            className="block w-full bg-gradient-to-r from-black to-black hover:from-black hover:to-black text-white text-lg font-semibold py-4 px-6 rounded-xl text-center transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+            >
+            Buy Now
+            </Link>
+
                 
                 <div className="grid grid-cols-2 gap-4">
                   <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg transition-colors duration-200">
@@ -197,4 +198,5 @@ export default function Product() {
       </div>
     </div>
   )
+
 }
